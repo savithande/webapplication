@@ -1,0 +1,670 @@
+* {
+    box-sizing: border-box;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: ;
+    min-height: ;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+     }
+
+* {
+    color:white;
+    box-sizing:0px ;
+    font-size: 20px;
+    font-family: times;
+    padding:;
+
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color:black;
+}
+
+input[type=submit] {
+    background-color:inherit;
+    color:white;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:{
+    background-color: black;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    margin-top: 6px;
+    padding: px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+
+    }
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 10px;
+  background-color: ;
+  padding: 50px 10 40px 0;
+}
+
+
+#myVideo{
+  z-index: -1 !important;
+    width: 100%;
+
+}
+
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 30px;
+  border: none;
+  border-radius: 10px;
+  margin: 15px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 30px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 2;
+}
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: blue;
+  color: black;
+  paddig:target;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: darkgoldenrod;
+  color: black;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 100px;
+  margin-top: 25px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 20px 20px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  background-color: ;
+  border-radius: 0px 0px 9px 9px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: white;
+    text-align: center;
+  }
+  .container {
+       padding: 80px 120px;
+   }
+   .person {
+       border: 10px solid transparent;
+       margin-bottom: 25px;
+       width: 80%;
+       height: 80%;
+       opacity: 0.7;
+   }
+   .person:hover {
+       border-color: #f1f1f1;
+   }
+}
+   * {box-sizing: border-box}
+
+   /* Full-width input fields */
+   input[type=text], input[type=password] {
+       width: 100%;
+       padding: 15px;
+       margin: 5px 0 22px 0;
+       display: inline-block ;
+       border: none;
+       background: green;
+   }
+
+   input[type=text]:focus, input[type=password]:focus {
+       background-color: ;
+       outline: none;
+   }
+
+   hr {
+       border: 1px solid #f1f1f1;
+       margin-bottom: 25px;
+   }
+
+   /* Set a style for all buttons */
+   button {
+       background-color: green;
+       color: white;
+       padding: 14px 20px;
+       margin: 8px 0;
+       border: none;
+       cursor: pointer;
+       width: 100%;
+       opacity: 0.9;
+   }
+
+   button:hover {
+       opacity:1;
+   }
+
+   /* Extra styles for the cancel button */
+   .cancelbtn {
+       padding: 14px 20px;
+       background-color:goldenrod;
+
+   }
+
+   /* Float cancel and signup buttons and add an equal width */
+   .cancelbtn, .signupbtn {
+     float: left;
+     width: 50%;
+   }
+
+   /* Add padding to container elements */
+   .container {
+       padding: 16px;
+   }
+
+   /* Clear floats */
+   .clearfix::after {
+       content: "";
+       clear: both;
+       display: table;
+   }
+
+   /* Change styles for cancel button and signup button on extra small screens */
+   @media screen and (max-width: 300px) {
+       .cancelbtn, .signupbtn {
+          width: 100%;
+       }
+   }
+}
+ * {
+    box-sizing: border-box;
+}
+.header {
+    text-align: center;
+    padding: 0px;
+    color:black;
+}
+
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 18px 20px;
+    background-color: inherit;
+    cursor: pointer;
+    font-size: 20px;
+    color:white;
+}
+
+.btn:hover {
+    background-color: green;
+}
+
+.btn.active {
+    background-color:inherit;
+    cursor: pointer;
+    color: white;
+}
+@import "compass/css3";
+
+@import "compass/reset";
+@import "compass/css3";
+
+/* Colors */
+/* ---------------------------------------- */
+$border: 		 #c6c6c6;
+$border-focus: #9FB1C1;
+$brand-color:  #1b3d4d;
+$booking-green: #bdcc00;
+$asphalt: 		#506982;
+
+*{
+	@include box-sizing(border-box);
+}
+
+a{
+  text-decoration: none;
+}
+.info-text{
+  text-align: left;
+  width: 100%;
+}
+header, form{
+	padding: 2em 10%;
+}
+
+.form-group{
+	margin-bottom: 20px;
+}
+h2.heading{
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: left;
+	color: darkred;
+	border-bottom: ;
+	padding-bottom: 3px;
+	margin-bottom: 20px;
+}
+
+.controls{
+	text-align: left;
+	position: relative;
+	input[type="text"],
+	input[type="email"],
+  input[type="number"],
+  input[type="date"],
+	input[type="tel"],
+	textarea,
+	button,
+	select{
+		padding: 12px;
+		font-size: 14px;
+		border: 1px solid $border;
+		width: 100%;
+		margin-bottom: 18px;
+		color: darkred;
+		font-family: 'Lato', 'sans-serif';
+		font-size: 16px;
+		font-weight: 300;
+		@include border-radius(2px);
+		@include transition(all .3s);
+
+		&:focus, &:hover{
+			outline: none;
+			border-color: $border-focus;
+			+ label{
+				color: ;
+          cursor: text;
+			}
+		}
+	}
+
+	.fa-sort{
+		position:absolute;
+		right: 10px;
+		top: 17px;
+		color: #999;
+	}
+	select{
+		@include appearance(none);
+		cursor: pointer;
+	}
+	label{
+		position: absolute;
+		left: 8px;
+		top: 12px;
+     width: 60%;
+     color: darkred;
+		font-size: 16px;
+		display: inline-block;
+		padding: 4px 10px;
+		font-weight: 400;
+		background-color:  ;
+		@include transition(color .3s, top .3s, background-color .8s);
+     background-color: rgba(255,255,255,1);
+
+    &.active{
+			top: 11px;
+			color: #555;
+      background-color: rgba(255,255,255,1);
+      width: auto;
+		}
+	}
+	textarea{
+		resize: none;
+		height: 200px;
+	}
+}
+
+button{
+  cursor: pointer;
+  background-color:;
+  border: none;
+  color: ;
+  padding: 12px 0;
+  float: right;
+  &:hover{
+    background-color: lighten($brand-color, 5%);
+  }
+}
+
+.clear:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+// Grid https://codepen.io/chriscoyier/pen/eGcLw
+
+$pad: 10px;
+
+.grid {
+  background: white;
+  //margin: 0 0 $pad 0;
+
+  &:after {
+    /* Or @extend clearfix */
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+[class*='col-'] {
+	float: left;
+  padding-right: $pad;
+  .grid &:last-of-type {
+  	padding-right: 0;
+      color: black;
+  }
+}
+.col-2-3 {
+	width: 66.66%;
+}
+.col-1-3 {
+	width: 33.33%;
+}
+.col-1-2 {
+	width: 50%;
+}
+
+.col-1-4 {
+	width: 25%;
+}
+
+@media (max-width: 760px) {
+  .col-1-4-sm, .col-1-3, .col-2-3 {
+	width: 10%;
+  }
+  [class*='col-'] {
+    padding-right: 0px;
+  }
+}
+
+.col-1-8 {
+	width: 12.5%;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: goldenrod;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: goldenrod;
+    font-size: 10px;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width:100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: inherit;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 10px 0 10px 0;
+    position:  absolute;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 0px;
+    background-color: ;
+    color: black;
+    font-style: italic;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: -1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 99%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}

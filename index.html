@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BookmyHotel</title>
+  <link rel="stylesheet" href="stylesheet/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navigation">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="hospitolity.html">Hospitality</a></li>
+          <li><a href="cab.html">CabServices</a></li>
+          <li><a href="fitnes.html">Fitness</a></li>
+
+
+        </ul>
+      </li>
+       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="accomodation.html">Accomodation<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="single.html">SingleDeluxSuite</a></li>
+          <li><a href="duplex.html">DoubleDeluxSuite</a></li>
+          <li><a href="romantic.html">RomanticSuite</a></li>
+        </ul>
+      </li>
+      <li><a href="offers.html">Offers</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="booking.html">Registration</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+
+      <li><a href="aboutus.html">AboutUs</a></li>
+      <li><a href="checkin.html">Checkout/Checkin</a></li>
+  </ul>
+</nav>
+<div class="row">
+  <video autoplay muted loop id="myVideo">
+  <source src="images/v1.mp4" type="video/mp4">
+
+</video>
+
+<div class="content">
+
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+<div id="logo">
+  <br>
+  <br>
+  <br>
+<img src="images/Logo2.png" style="width:80%  position=center">
+</div>
+
+<div class="row" style="background-color:white" ></div>
+</div>
+</body>
+</html>

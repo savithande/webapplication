@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BookmyHotel</title>
+  <link rel="stylesheet" href="stylesheet/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+
+  <style>
+  body{
+    margin: 0;
+  }
+  .column{
+    color: blue;
+    font-size: 18px;
+
+  }
+  .container{
+    color: white;
+    font-size: 25px;
+    position: center;
+  }
+
+  .text{
+    background-color: inherit;
+  }
+  input[type=submit]{
+    background-color: black;
+    color:white;
+  }
+  input[type=text]{
+    background-color: inherit;
+    color: white;
+  }
+  </style>
+</head>
+<body background="images/a13.jpg" ng-app="myApp">
+ <nav class="navbar navbar-inverse">
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="hospitolity.html">Hospitality</a></li>
+          <li><a href="cab.html">CabServices</a></li>
+          <li><a href="fitnes.html">Fitness</a></li>
+
+        </ul>
+      </li>
+       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="accomodation.html">Accomodation<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="single.html">SingleDeluxSuite</a></li>
+          <li><a href="duplex.html">DoubleDeluxSuite</a></li>
+          <li><a href="romantic.html">RomanticSuite</a></li>
+
+        </ul>
+      </li>
+      <li><a href="offers.html">Offers</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="booking.html">Registration</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="aboutus.html">Aboutus</a></li>
+      <li><a href="checkin.html">Checkout/Checkin</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="row">
+<div class="col-xs-6">
+  <div class="container" id="style">
+   <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div  class="col-xs-6" id="center">
+             <br>
+             <br>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0512203352228!2d77.53479871420073!3d12.968574318455039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3dde41c9d541%3A0xdd5400ac1d9e0a9a!2sNIIT+Bangalore+Vijayanagar+Centre!5e0!3m2!1sen!2sin!4v1531717936253" width="500px" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+             </div>
+
+    </div>
+    <div class="column" id="text"  ng-controller="ContactController" method="post">
+      <form action="contact.html">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." ng-model="fname" >
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." ng-model="lname">
+        <label for="country">Country</label>
+        <select id="country" name="country" style="background-color:inherit;" ng-model="country">
+          <option value="australia">Banglur</option>
+          <option value="canada">mysur</option>
+          <option value="usa">others</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px;background-color:inherit;"></textarea>
+        <input type="submit" value="Submit" ng-click="Submit()">
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+<script>
+// Initialize google maps
+function myMap() {
+  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 12};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+<div background="black">
+
+
+</div>
+</body>
+</html>
